@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 # DoD CLI Util - Show Case of how to access the FireEye Detection on Demand API Endpoints
 # hugo.sigurdson@fireeye.com
+# /*Copyright (C) 2020 FireEye, Inc. All Rights Reserved.*/
 #
 # Import required modules
 import requests
