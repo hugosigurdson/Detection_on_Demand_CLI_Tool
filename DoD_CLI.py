@@ -11,13 +11,19 @@ import argparse
 import mime
 import os
 import sys
+import textwrap
 from pathlib import Path
 from pprint import pprint
 from argparse import RawTextHelpFormatter
 
 
 # Build the command line interpreter, with support for RawText Formatting
-parser = argparse.ArgumentParser(formatter_class=RawTextHelpFormatter)
+parser = argparse.ArgumentParser(prog='DoD_CLI.py',
+                                 formatter_class=RawTextHelpFormatter,
+                                 epilog=textwrap.dedent('''\
+                                 DoD CLI Util - Show Case of how to access the FireEye Detection on Demand API Endpoints
+                                 hugo.sigurdson@fireeye.com
+                                 Copyright (C) 2020 FireEye, Inc. All Rights Reserved.'''))
 # Adds the --file argument
 parser.add_argument("-F", "--file",
                     help="File(s) that you want to submit to Detection on Demand.\n"
